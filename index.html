@@ -137,30 +137,23 @@
                             </div>
 
                             <hr>
-                            <h2>
-                                <strong>42</strong>
-                                <br>
-                                <small>dias restantes</small>
-                            </h2>
+                            <p>Tiempo restante:</p>
+                            <h2 class="dias-restantes">16 <small>dias</small></h2>
                             
                             <br>
                             <form id="formDonate" action="">
                                 <p>¿Cuánto deseas donar?</p>
                                 <div class="form-group">
                                     <div class="col-sm-12">
-                                        <div><label> <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios"> 1 ampolleta (80K </label></div>
-                                        <div><label> <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios"> 1/2 ampolleta (40,000) </label></div>
-                                        <div><label> <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios"> 1000 (y me comprometo a reclutar 5 personas que donen 1000 :) ) </label></div>
-                                        <div><label> <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios"> Lo quer tu corazón quiera/puedas </label></div>
+                                        <div><label> <input class="rbtnOption" type="radio" name="optionsRadios"> 1 ampolleta (80K </label></div>
+                                        <div><label> <input class="rbtnOption" type="radio" name="optionsRadios"> 1/2 ampolleta (40,000) </label></div>
+                                        <div><label> <input class="rbtnOption" type="radio" name="optionsRadios"> 1000 (y me comprometo a reclutar 5 personas que donen 1000 :) ) </label></div>
+                                        <div><label> <input class="rbtnOption" type="radio" name="optionsRadios"> Lo quer tu corazón quiera/puedas </label></div>
                                     </div>
                                 </div>
                                 <small>Monto mínimo a deducir 5,000... <a href="#">Leer mas</a></small>
-                                <br>
-                                <button class="btn btn-primary " type="button"><i class="fa fa-check"></i>&nbsp;Aceptar</button>
-                                <br>
-                                <br>
                             </form>
-                            <button id="btnDonar" type="button" class="btn btn-lg btn-info">Donar</button>
+                            <button id="btnDonar" type="button" class="btn btn-primary btn-lg">¡Donar!</button>
                             <hr>
                             <h2><strong>FAQ'S</strong></h3>
                             <hr>
@@ -190,17 +183,9 @@
 
 
     <!-- Mainly scripts -->
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        $(function(){
-            $("#formDonate").hide();
-            $("#btnDonar").click(function(){
-                console.log("Click!");
-                $("#formDonate").toggle();
-            });
-        })
-    </script>
+    <script src="assets/js/jquery-2.1.1.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 

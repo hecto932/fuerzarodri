@@ -19,3 +19,13 @@
 .white-text{
 	color: white;
 }
+
+#btnDonar{
+	width: 100%;
+	font-size: 2em;
+}
+
+.dias-restantes{
+	font-size: 4em;
+	font-weight: bold;
+}
