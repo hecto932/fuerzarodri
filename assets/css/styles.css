@@ -2,6 +2,11 @@
 	background: none repeat scroll 0 0 #0D353F;
 }
 
+.bg-recaudia-footer{
+	background: none repeat scroll 0 0 #0D353F;
+	display: block;
+}
+
 .red-heart{
 	font-size: 1em;
 	color: red;
