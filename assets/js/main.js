@@ -50,16 +50,4 @@ $(function(){
         options: options
     });
 
-    var data2 = {
-      series: [5, 3, 4]
-    };
-
-    var sum = function(a, b) { return a + b };
-
-    new Chartist.Pie('.ct-chart', data2, {
-      labelInterpolationFnc: function(value) {
-        return Math.round(value / data2.series.reduce(sum) * 100) + '%';
-      }
-    });
-
 });
